@@ -1,0 +1,159 @@
+.main{
+    padding: 10px;
+    min-height: 100vh;
+}
+.layout{
+       display: flex;
+}
+
+.sidebar{
+    min-height: 100%;
+    width: 20%;
+    border-radius: 5px;
+    background-color: green;
+    padding: 10px;
+    box-shadow:0 0 2px gray ;
+   color: white;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.header{
+    height: 10vh;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 0 2px gray;
+}
+
+.body{
+    min-height: 70vh;
+    background-color: white;
+    box-shadow: 0 0 2px gray;
+}
+
+.logo h4{
+    font-size: 2rem;
+    margin: 20px 0;
+    text-align: center;
+}
+.menu{
+   margin-top: 50px; 
+}
+.menu-item{
+    margin-top: 30px;
+}
+.menu-item:hover{
+    color: black;
+}
+
+.menu-item a{
+color: white;
+text-decoration: none;
+font-size: 1.2rem;
+}
+.menu-item i{
+    font-size: 1.2rem;
+   margin: 0 15px;
+}
+
+.active{
+    background-color: white;
+    color: black;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height:70px ;
+    margin: 0 15px;
+}
+.header-content i{
+    margin-right: 8px;
+    font-size: 1.6rem;
+}
+.header-content a{
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(10, 43, 10);
+    margin:0 10px ;
+    text-transform: uppercase;
+}
+.link:hover{
+    color: black;
+}
+
+/* apply doctor page */
+.wrapper{
+       background-color: #F0F2F5; 
+       width: 100%;
+       min-height: 40vh;
+       padding: 5px;
+}
+
+.footer{
+    margin-top: 20px;
+}
+
+/* for booking page */
+.main-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+      background-color: #F0F2F5; 
+}
+.form-div{
+    padding: 10px;
+    border: 1px solid grey;
+    margin-top: 50px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    background-color: white;
+}
+
+/* landing-page */
+.heading-div{
+padding: 15px;
+color: white;
+background-color: rgb(16, 131, 62);
+}
+.wrapper-div-landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.content-div{
+    width: 50%;
+}
+.content-div h2{
+    color: green;
+    font-size: 40px;
+    font-weight: 700;
+}
+.content-div p{
+    text-align: justify;
+    color: green;
+}
+.button-div{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-landing{
+    padding: 10px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    background-color:rgba(16, 177, 80, 0.868) ;
+    color: #F0F2F5;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+

@@ -1,0 +1,21 @@
+.form-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border: 1px solid gray !important;
+    background-color: #F0F2F5;
+}
+.form-container .text{
+    color: green;
+    margin-right: 10%;
+
+}
+.form-container .text .heading{
+    font-size: 60px;
+    margin-bottom: 8px;
+}
+.card{
+    width: 20%;
+}
