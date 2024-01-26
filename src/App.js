@@ -13,6 +13,7 @@ import Users from "./pages/admin/Users";
 import Doctors from "./pages/admin/Doctors";
 import ManageProfile from "./pages/doctor/ManageProfile";
 import MakeAppointment from "./pages/MakeAppointment";
+import Landing from './components/Landing'
 import Appointments from "./pages/Appointments";
 import { useSelector } from "react-redux";
 import DoctoBookings from "./pages/doctor/DoctoBookings";
@@ -27,7 +28,6 @@ function App() {
         <Spinner />
       ) : (
         <Routes>
-
           <Route
             path="/"
             element={
@@ -41,6 +41,14 @@ function App() {
             element={
               <PublicRoute>
                 <Register />
+              </PublicRoute>
+            }
+          />
+          <Route
+            path="/landing"
+            element={
+              <PublicRoute>
+                <Landing />
               </PublicRoute>
             }
           />

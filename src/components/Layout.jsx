@@ -17,6 +17,7 @@ function Layout({ children }) {
   //for logging out
  const handleLogout = () =>{
    localStorage.clear()
+   navigate('/login')
    message.success('Logged out successfully')
   }
 

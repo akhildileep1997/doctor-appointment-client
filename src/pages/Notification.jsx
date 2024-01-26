@@ -6,6 +6,7 @@ import { hideLoading, showLoading } from "../redux/slices/alertSlice";
 import axios from "axios";
 import { baseUrl } from "../baseUrl";
 import { useNavigate } from "react-router-dom";
+import { MDBListGroup, MDBListGroupItem } from "mdb-react-ui-kit";
 
 function Notification() {
   const navigate = useNavigate();
@@ -87,14 +88,13 @@ function Notification() {
             <Row gutter={20}>
               {user?.notification.map((msg) => (
                 <div
-                  style={{ cursor: "pointer" }}
-                  className="card p-4 ms-3 mb-3"
+                  style={{ minWidth: "23rem" }}
+                  className="card p-4 ms-4 mb-3"
                 >
-                  <div
-                    onClick={() => navigate(msg.onClickPath)}
-                    className="card-text"
-                  >
-                    {msg.message}
+                  <div className="card-text">
+                    <MDBListGroup style={{ minWidth: "19rem" }} light small>
+                      <MDBListGroupItem> {msg.message}</MDBListGroupItem>
+                    </MDBListGroup>
                   </div>
                 </div>
               ))}
@@ -112,12 +112,14 @@ function Notification() {
             </div>
             <Row gutter={20}>
               {user?.seenNotification.map((msg) => (
-                <div style={{ cursor: "pointer" }} className="card p-4">
-                  <div
-                    onClick={() => navigate(msg.onClickPath)}
-                    className="card-text"
-                  >
-                    {msg.message}
+                <div
+                  style={{ minWidth: "23rem" }}
+                  className="card p-4  ms-4 mb-3"
+                >
+                  <div className="card-text">
+                    <MDBListGroup style={{ minWidth: "19rem" }} light small>
+                      <MDBListGroupItem> {msg.message}</MDBListGroupItem>
+                    </MDBListGroup>
                   </div>
                 </div>
               ))}
